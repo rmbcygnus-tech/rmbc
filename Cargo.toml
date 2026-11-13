@@ -1,0 +1,16 @@
+[package]
+name = "rmbc"
+version = "0.0.1"
+edition = "2025"
+description = "Reference external add-on for Open CAD Studio — distributed as a prebuilt cdylib via GitHub Releases."
+license = "GPL-3.0-only"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# The stable contract, fetched from the OpenCADStudio repo. The `host` feature
+# adds the runtime HostApi / BuiltinPlugin surface. From API 14 the plugin runs
+# its own runner loop, so it need not share the host's compiler or codec
+# commit; hosts whose codec types have the same wire shapes load it.
+ocs_plugin_api = { git = "https://github.com/HakanSeven12/OpenCADStudio", rev = "03e4c1324", features = ["host"] }

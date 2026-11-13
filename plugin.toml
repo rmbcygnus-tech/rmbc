@@ -1,0 +1,14 @@
+[plugin]
+id = "opencad.example"
+name = "rmbc"
+version = "0.0.1"
+description = "Reference dynamically-loaded add-on"
+author = "Open CAD Studio contributors"
+license = "GPL-3.0-only"
+repository = ""
+
+[opencad]
+api_version = 15
+ribbon_order = 50
+command_prefixes = ["EX_"]
+xdata_apps = []
