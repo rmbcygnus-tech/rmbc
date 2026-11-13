@@ -5,7 +5,7 @@ version = "0.0.1"
 description = "Reference dynamically-loaded add-on"
 author = "Open CAD Studio contributors"
 license = "GPL-3.0-only"
-repository = ""
+repository = "rmbcygnus-tech/rmbc"
 
 [opencad]
 api_version = 15
